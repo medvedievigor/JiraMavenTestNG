@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Jira Hillel" verbose="10" parallel="tests">
+
+	<test name="All Tests" group-by-instances="true" verbose="3">
+    		<classes>
+				<class name="eagles_tests.JiraFindIssueTest" />
+		    	<class name="eagles_tests.JiraNewIssueTest" />
+
+		    </classes>
+	</test>
+</suite>
