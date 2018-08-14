@@ -12,7 +12,7 @@ public class BeforeTestSteps {
 
         LoginPage loginPage = new LoginPage();
         LoadProperties loadProperties = new LoadProperties();
-        Configuration.remote = "http://localhost:4444/wd/hub";
+       //Configuration.remote = "http://localhost:4444/wd/hub";
         Configuration.browser = "chrome";
         Configuration.timeout = 9000;
 
