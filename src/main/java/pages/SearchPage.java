@@ -19,7 +19,7 @@ public class SearchPage {
         $(byXpath("//button[@class=\"aui-item aui-button aui-button-subtle search-button\"]")).click();
     }
     public boolean atRequiredPage() //проверяет, что мы на searchPage.
-    {   Assert.assertEquals(title(), "Issues Navigator - Hillel IT School JIRA");
+    {   Assert.assertEquals(title(), "Issue Navigator - Hillel IT School JIRA");
         return true;
     }
 }
