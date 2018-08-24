@@ -6,7 +6,7 @@ import com.codeborne.selenide.WebDriverRunner;
 import org.testng.annotations.*;
 import pages.DashboardPage;
 import pages.SearchPage;
-
+import org.openqa.selenium.NotFoundException;
 
 import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.$;
