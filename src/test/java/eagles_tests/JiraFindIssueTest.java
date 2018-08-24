@@ -39,7 +39,12 @@ public class JiraFindIssueTest {
         searchPage.fillJQLField(jqlRequestForSearching);
         searchPage.clickSearchButton();
 
-        $(byXpath("//tbody[@class=\"ui-sortable\"]/tr[1]")).should(Condition.visible);//проверяет, что иcкомый issue есть в списке
+        try {
+            $(byXpath("//li[@title=\"[Test Automation] QAAUTO6-T1_test02\"][1]")).should(Condition.visible);//проверяет, что иcкомый issue есть в списке
+        }
+        catch (NotFoundException e){
+            $(byXpath("//tbody[@class=\"ui-sortable\"]/tr[1]")).should(Condition.visible);
+        }
         // или можно через
         //Assert.assertTrue($(byXpath("//tbody[@class="ui-sortable"]/tr[1]")).isDisplayed(),"This task not exist!");
 
